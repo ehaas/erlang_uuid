@@ -1,5 +1,3 @@
-//return enif_make_string(env, "Hello world!", ERL_NIF_LATIN1);
-
 #include "erl_nif.h"
 #include "uuid/uuid.h"
 
