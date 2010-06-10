@@ -29,7 +29,7 @@ static ERL_NIF_TERM generate(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[]
   char str[40];
   uuid_unparse( new_uuid, str );
 
-	return enif_make_string(env, str, ERL_NIF_LATIN1);
+  return enif_make_string(env, str, ERL_NIF_LATIN1);
 }
 
 static ErlNifFunc uuid_funcs[] =

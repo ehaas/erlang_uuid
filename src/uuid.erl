@@ -3,8 +3,8 @@
 -on_load(load_nifs/0).
 
 load_nifs() ->
-	File = filename:join([filename:dirname(code:which(?MODULE)), "uuid"]),
-	erlang:load_nif(File, 0).
+  File = filename:join([filename:dirname(code:which(?MODULE)), "uuid"]),
+  erlang:load_nif(File, 0).
 
 generate() ->
   nif_error(?LINE).    
